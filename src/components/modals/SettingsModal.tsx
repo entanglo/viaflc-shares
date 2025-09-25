@@ -118,8 +118,10 @@ const SettingsModal = () => {
     reset({
       relay: RELAY_URL || '',
       network: NetworkTypeType.Mainnet,
-      payerPublicKey: PAYER_PUBLIC_KEY || '',
-      workProviderPublicKey: WORK_PROVIDER_PUBLIC_KEY || '',
+      payerPublicKey: PAYER_PUBLIC_KEY ? nip19.npubEncode(PAYER_PUBLIC_KEY) : '',
+      workProviderPublicKey: WORK_PROVIDER_PUBLIC_KEY
+        ? nip19.npubEncode(WORK_PROVIDER_PUBLIC_KEY)
+        : '',
       explorer: EXPLORER_URL || ''
     });
     dispatch(clearSettings());
