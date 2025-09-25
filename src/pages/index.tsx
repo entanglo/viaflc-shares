@@ -2,13 +2,13 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { Box } from '@mui/system';
 import Connect from '@components/Connect';
-import { getAddress } from '@store/app/AppSelectors';
-import { useSelector, useDispatch } from '@store/store';
+import Faq from '@components/Faq';
 import { clearAddress } from '@store/app/AppReducer';
-import { stopShares, stopPayouts, stopHashrates } from '@store/app/AppThunks';
+import { getAddress } from '@store/app/AppSelectors';
+import { stopHashrates, stopPayouts, stopShares } from '@store/app/AppThunks';
+import { useDispatch, useSelector } from '@store/store';
 import { PRIMARY_COLOR, PRIMARY_COLOR_1, PRIMARY_COLOR_3 } from '@styles/colors';
 import { HOME_PAGE_ENABLED } from 'src/config/config';
-import Faq from '@components/Faq';
 
 const Home = () => {
   const dispatch = useDispatch();

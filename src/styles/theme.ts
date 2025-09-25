@@ -1,12 +1,12 @@
 import { createTheme, Theme } from '@mui/material/styles';
-import { THEME_PRIMARY, THEME_SECONDARY } from '@styles/colors';
+import { THEME_PRIMARY } from '@styles/colors';
 import {
   DARK_MODE_DEFAULT,
+  THEME_PRIMARY_COLOR_2,
   THEME_TEXT_DARK_PRIMARY,
   THEME_TEXT_DARK_SECONDARY,
   THEME_TEXT_LIGHT_PRIMARY,
-  THEME_TEXT_LIGHT_SECONDARY,
-  THEME_PRIMARY_COLOR_2
+  THEME_TEXT_LIGHT_SECONDARY
 } from 'src/config/config';
 
 const customTheme = (outerTheme: Theme, mode: 'light' | 'dark' = DARK_MODE_DEFAULT) =>

@@ -19,8 +19,8 @@ const Header = () => {
               src="/assets/logo.svg"
               alt="Mobile Logo"
               className={styles.mobileLogo}
-              width={120}
-              height={48}
+              width={100}
+              height={64}
             />
           </Link>
           <Link href="/" passHref>
@@ -28,7 +28,7 @@ const Header = () => {
               src="/assets/logo.svg"
               alt="Logo"
               className={styles.logo}
-              width={170}
+              width={128}
               height={64}
             />
           </Link>
